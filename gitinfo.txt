@@ -1,3 +1,2 @@
-git is a free distribution version control system.
-git is for many people's network.
-
+git is a free distributed version control system.
+git is for many people's network, espacially for programer.
