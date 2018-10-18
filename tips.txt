@@ -1,0 +1,72 @@
+tensorflow tips:
+localhost> docker images
+localhost> docker run -it saturnlab/tensorflow:0.3.0
+localhost> 
+
+Linux：
+
+cp -r file dire --r是都复制
+
+du -s file --文件或文件夹总体大小
+
+docker tips:
+docker run --hostname tensorflow --name tensorflow  -v $PWD\workspace:/root/workspace -it saturnlab/tensorflow:0.3.0 --启动container，挂在文件，设置用户名
+
+docker build --从dockerfile建立image
+
+docker commit --对产生更改的container从新保存为image
+
+docker cp --从container之间、container和
+
+docker images --显示当前已有的镜像
+
+docker rm CI --删除container
+
+docker rmi ImageID --删除
+
+docker ps -a --显示当前的container
+
+docker run -v $PWD/workspace/ubuntu:/root/ubuntu -it -p 3000:3000 ubuntu:xenial --将当前路径映射到虚拟机ubuntu下的/root/ubuntu 
+
+docker system prune --删除stopped的container、最新container不使用的network、挂载container
+
+docker ps -a --显示所有的container进程
+
+docker run -it saturnlab/tensorflow:0.3.0 --从一个image进入一个container
+
+exit --调出container，但是container仍然在run
+
+docker stop CI --停止某个container
+
+docker start CI --开启某个container
+
+docker exec -it CI bash --进入某个container
+
+git tipps:
+
+cat .git/config --在一个文件夹里看git的路径
+
+
+
+github项目：
+
+github:easy-helmet
+
+$ git push origin test:master         // 提交本地test分支作为远程的master分支 //好像只写这一句，远程的github就会自动创建一个test分支
+
+$ git push origin test:test              // 提交本地test分支作为远程的test分支
+
+git branch --set-upstream-to=origin/<远程分支名> 本地分支名  //只有提示没有track远程代码库才要这句，然后重新pull
+
+
+
+
+
+ssh：
+
+ssh -p [port] usrname@server --一定要设置端口？因为22端口被占用？小写p
+
+scp -P -r usrname@server:directory directory --从服务器考到本地
+
+
+
